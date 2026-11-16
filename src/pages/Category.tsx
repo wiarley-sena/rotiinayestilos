@@ -15,12 +15,14 @@ export default function Category() {
       <div className="grid products">
         {cat.products.map((p) => (
           <article key={p.id} className="prod">
+            <Link className="link" to={`/detalhes/${p.id}`}>
             <PhotoCard src={p.image} alt={p.name} />
             <div className="cap">
               <h3>{p.name}</h3>
               <small>{p.description}</small>
-              {p.price && <b>{p.price}</b>}
+              {p.price && (<b>R$ {p.price}</b>)}
             </div>
+            </Link>
           </article>
         ))}
       </div>
@@ -30,3 +32,4 @@ export default function Category() {
     </main>
   );
 }
+

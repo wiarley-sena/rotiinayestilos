@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Category from "./pages/Category";
+import Detalhes from "./pages/detalhes";
 
 function ScrollManager() {
   const { pathname, hash } = useLocation();
@@ -21,6 +22,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/detalhes/:id" element={<Detalhes />} />
         <Route path="/:slug" element={<Category />} />
       </Routes>
       <Footer />

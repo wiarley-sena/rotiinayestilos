@@ -44,4 +44,15 @@ export const categories: Category[] = [
       { id: "brilho labial", name: "Brilho Labial", image: brilho, price: "R$ 14,90", description: "Asti Cosméticos · 5mL · Hidratação e brilho intenso."},
     ],
   },
+  {
+    slug: "body splash",
+    title: "Body Splash",
+    subtitle: "Hidratação e perfume",
+    description: "Perfume e hidratação para o seu corpo.",
+    cover: kitVanilla,
+    products: [
+      
+    ]
+
+  }
 ];

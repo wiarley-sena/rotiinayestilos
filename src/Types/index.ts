@@ -4,6 +4,7 @@ export interface Product {
   description: string;
   image: string;
   price?: string;
+  available: boolean;
 }
 
 export interface Category {

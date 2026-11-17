@@ -2,17 +2,17 @@ import { Link } from "react-router-dom";
 import PhotoCard from "../components/PhotoCard";
 import Reveal from "../components/Reveal";
 import { categories } from "../Data/products";
-import { po, mousse, micelar, kitRosa, kitVanilla, batom, logo } from "../assets";
+import { images } from "../assets";
 import { INSTAGRAM_HANDLE, INSTAGRAM_URL } from "../utils/constants";
 
 const hero = [
-  { src: po, alt: "Pó facial translúcido" },
-  { src: mousse, alt: "Mousse facial" },
-  { src: kitRosa, alt: "Kit cuidado íntimo rosa mosqueta" },
-  { src: micelar, alt: "Água micelar rosa mosqueta" },
-  { src: batom, alt: "Batom Astro Lips" },
+  { src: images["po"], alt: "Pó facial translúcido" },
+  { src: images["mousse"], alt: "Mousse facial" },
+  { src: images["kit-rosa"], alt: "Kit cuidado íntimo rosa mosqueta" },
+  { src: images["micelar"], alt: "Água micelar rosa mosqueta" },
+  { src: images["batom"], alt: "Batom Astro Lips" },
 ];
-const insta = [po, kitVanilla, batom, micelar, kitRosa, mousse];
+const insta = [images["po"], images["kit-vanilla"], images["batom"], images["micelar"], images["kit-rosa"], images["mousse"]];
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
       </section>
 
       <Reveal className="about">
-        <PhotoCard src={logo} alt="Logo Rotiinayestilos" />
+        <PhotoCard src={images["logo"]} alt="Logo Rotiinayestilos" />
         <div>
           <h2>Toda mulher merece <span>se cuidar</span></h2>
           <p>Maquiagem, skincare e cuidados do dia a dia escolhidos com carinho, para você se sentir bem em cada momento da sua rotina.</p>

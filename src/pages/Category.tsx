@@ -18,6 +18,7 @@ export default function Category() {
             <Link className="link" to={`/detalhes/${p.id}`}>
             <PhotoCard src={p.image} alt={p.name} />
             <div className="cap">
+              {p.available && <strong className="sold-out">Esgotado</strong>}
               <h3>{p.name}</h3>
               <small>{p.description}</small>
               {p.price && (<b>R$ {p.price}</b>)}
